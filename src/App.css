@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-preview {
+  display: none;
+}
+.d1 {
+  width: 1px;
+}
+.phone-preview img {
+  max-width: 250px;
+  border: none;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  width: 100%;
+}
+
+.login-form-container {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+}
+
+.login-form h1 {
+  font-family: 'Billabong', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background: #fafafa;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #0095f6;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #b2dffc;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  color: #8e8e8e;
+  font-size: 14px;
+}
+
+.separator .line {
+  flex-grow: 1;
+  height: 1px;
+  background: #dbdbdb;
+}
+
+.separator span {
+  margin: 0 10px;
+}
+
+.facebook-login {
+  background: none;
+  color: #385185;
+  font-weight: bold;
+}
+
+.forgot-password {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #385185;
+}
+
+.signup-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.signup-container a {
+  color: #0095f6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .login-form-container {
+  background: #000;
+  border: 1px solid #fff;
+}
+
+.dark-mode input {
+  background: #000;
+  color: #ffffff;
+  border: 1px solid #444444;
+}
+
+.dark-mode button {
+  background-color: #0095f6;
+  color: #ffffff;
+}
+
+.dark-mode button:disabled {
+  background-color: #3a3a3a;
+}
+
+.dark-mode .separator {
+  color: #8e8e8e;
+}
+
+.dark-mode .facebook-login {
+  color: #0095f6;
+}
+
+.dark-mode .signup-container a {
+  color: #0095f6;
+}
+
+@media (min-width: 768px) {
+  .phone-preview {
+    display: block;
+    margin-right: 50px;
+  }
+
+  .login-container {
+    flex-direction: row;
+  }
+
+  .login-form-container {
+    width: 350px;
+  }
+}
