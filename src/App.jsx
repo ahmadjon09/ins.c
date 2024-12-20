@@ -13,7 +13,7 @@ function App () {
     e.preventDefault()
     setMessage('Processing...')
 
-    const response = await fetch('http://localhost:5000/like', {
+    const response = await fetch('https://ins-s.onrender.com/like', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
